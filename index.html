@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nothing to See Here</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        h1 {
+            text-align: center;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        a.white-mode {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nothing to see here. <a id="i-link" href="#">I</a> just needed a <a id="domain-link">domain</a>.</h1>
+    <script>
+        const domainLink = document.getElementById('domain-link');
+        const iLink = document.getElementById('i-link');
+
+        function toggleColors() {
+            const isBlack = document.body.style.backgroundColor === 'black';
+            document.body.style.backgroundColor = isBlack ? 'white' : 'black';
+            document.body.style.color = isBlack ? 'black' : 'white';
+            domainLink.classList.toggle('white-mode', isBlack);
+            iLink.classList.toggle('white-mode', isBlack);
+        }
+
+        domainLink.addEventListener('click', toggleColors);
+
+        iLink.addEventListener('click', (event) => {
+            event.preventDefault();
+            window.location.href = 'https://github.com/SamsungFridgeCoder'; 
+        });
+    </script>
+</body>
+</html>
