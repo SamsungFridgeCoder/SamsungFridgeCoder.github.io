@@ -1,135 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Italian Food Truck Menu</title>
-    <style>
-        body {
-            font-family: "Georgia", serif;
-            text-align: center;
-            background-color: #fff8f0;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8">
+  <title>Italian Food Truck Menu</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 30px;
-            border: 1px solid #ccc;
-            background-color: white;
-        }
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+    }
 
-        h1 {
-            font-size: 48px;
-            color: #803C2F;
-            margin-bottom: 0;
-        }
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2vw;
+      background-color: #fff;
+      border: 1px solid #ccc;
+    }
 
-        h2 {
-            font-size: 18px;
-            color: #803C2F;
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
+    h1 {
+      font-size: 4vw;
+      color: #803C2F;
+      margin-bottom: 0;
+    }
 
-        .flag {
-            width: 100px;
-            height: 10px;
-            background: linear-gradient(to right, green 33%, white 33%, white 66%, red 66%);
-            margin: 0 auto 20px;
-        }
+    h2 {
+      font-size: 1.5vw;
+      color: #803C2F;
+      margin-top: 0;
+    }
 
-        h3 {
-            font-size: 24px;
-            color: #803C2F;
-            margin-top: 30px;
-            text-transform: uppercase;
-        }
+    .flag {
+      width: 100px;
+      height: 10px;
+      background: linear-gradient(to right, green 33%, white 33%, white 66%, red 66%);
+      margin: 1vw auto;
+    }
 
-        .section {
-            margin-bottom: 20px;
-        }
+    h3 {
+      font-size: 2vw;
+      color: #803C2F;
+      margin-top: 2vw;
+      text-transform: uppercase;
+    }
 
-        .item {
-            margin: 10px 0;
-        }
+    .section {
+      margin-bottom: 2vw;
+    }
 
-        .item-title {
-            font-weight: bold;
-            text-transform: uppercase;
-        }
+    .item {
+      margin: 1vw 0;
+    }
 
-        .footer {
-            margin-top: 30px;
-            font-size: 14px;
-            color: #555;
-        }
+    .item-title {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.5vw;
+    }
 
-        img.food {
-            width: 80px;
-            vertical-align: middle;
-            margin: 10px;
-        }
-    </style>
+    .price {
+      float: right;
+    }
+
+    .description {
+      font-size: 1.1vw;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 3vw;
+      font-size: 1vw;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 8vw;
+      }
+
+      h2, h3, .item-title, .description {
+        font-size: 4vw;
+      }
+
+      .description {
+        font-size: 3.5vw;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>MAIN MENU</h1>
-        <h2>ITALIAN FOOD TRUCK</h2>
-        <div class="flag"></div>
+  <div class="container">
+    <h1>MAIN MENU</h1>
+    <h2>ITALIAN FOOD TRUCK</h2>
+    <div class="flag"></div>
 
-        <h3>Mains</h3>
-        <div class="section">
-            <div class="item">
-                <div class="item-title">Spaghetti Bolognese</div>
-                <div>Spaghetti with rich minced beef, tomatoes, and herbs</div>
-            </div>
-            <div class="item">
-                <div class="item-title">Spaghetti Carbonara</div>
-                <div>Spa</div>
-            </div>
-            <div class="item">
-                <div class="item-title">Fettuccine Alfredo</div>
-                <div>Garlic shrimp & crushed red pepper with penne in spicy rosa sauce</div>
-            </div>
-            <div class="item">
-                <div class="item-title">Classic Lasagna</div>
-                <div>Spicy Italian sausage & meat sauce tossed & topped with mozzarella, Parmesan & ricotta</div>
-            </div>
-            <div class="item">
-                <div class="item-title">Pesto Pasta</div>
-                <div>Spicy Italian sausage & meat sauce tossed & topped with mozzarella, Parmesan & ricotta</div>
-            </div>
-        </div>
-
-        <h3>Sides</h3>
-        <div class="section">
-            <div class="item">
-                <div class="item-title">Parmesan Fries</div>
-                <div>Fries topped with grated Parmesan cheese</div>
-            </div>
-            <div class="item">
-                <div class="item-title">Caprese Salad</div>
-                <div>Tomato, mozzarella, basil, and olive oil</div>
-            </div>
-        </div>
-
-        <h3>Appetizers</h3>
-        <div class="section">
-            <div class="item">
-                <div class="item-title">Garlic Bread</div>
-                <div>Fresh garlic bread with parsley</div>
-            </div>
-            <div class="item">
-                <div class="item-title">Bruschetta</div>
-                <div>Toasted bread with tomato and basil topping</div>
-            </div>
-        </div>
-
-        <div class="footer">
-            www.mathisvelghe.me
-        </div>
+    <h3>Mains</h3>
+    <div class="section">
+      <div class="item">
+        <div class="item-title">Spaghetti Bolognese <span class="price">£8.00</span></div>
+        <div class="description">Spaghetti with rich minced beef, tomatoes, and herbs</div>
+      </div>
+      <div class="item">
+        <div class="item-title">Spaghetti Carbonara <span class="price">£7.50</span></div>
+        <div class="description">Creamy pasta with bacon, Parmesan, garlic, and egg</div>
+      </div>
+      <div class="item">
+        <div class="item-title">Fettuccine Alfredo <span class="price">£8.50</span></div>
+        <div class="description">Garlic shrimp & crushed red pepper with penne in spicy rosa sauce</div>
+      </div>
+      <div class="item">
+        <div class="item-title">Classic Lasagna <span class="price">£9.00</span></div>
+        <div class="description">Spicy Italian sausage & meat sauce tossed & topped with mozzarella, Parmesan & ricotta</div>
+      </div>
+      <div class="item">
+        <div class="item-title">Pesto Pasta <span class="price">£7.80</span></div>
+        <div class="description">Spicy Italian sausage & meat sauce tossed & topped with mozzarella, Parmesan & ricotta</div>
+      </div>
     </div>
+
+    <h3>Sides</h3>
+    <div class="section">
+      <div class="item">
+        <div class="item-title">Parmesan Fries <span class="price">£2.50</span></div>
+        <div class="description">Fries topped with grated Parmesan cheese</div>
+      </div>
+      <div class="item">
+        <div class="item-title">Caprese Salad <span class="price">£3.00</span></div>
+        <div class="description">Tomato, mozzarella, basil, and olive oil</div>
+      </div>
+    </div>
+
+    <h3>Appetizers</h3>
+    <div class="section">
+      <div class="item">
+        <div class="item-title">Garlic Bread <span class="price">£3.00</span></div>
+        <div class="description">Fresh garlic bread with parsley</div>
+      </div>
+      <div class="item">
+        <div class="item-title">Bruschetta <span class="price">£3.50</span></div>
+        <div class="description">Toasted bread with tomato and basil topping</div>
+      </div>
+    </div>
+
+    <h3>Drinks</h3>
+    <div class="section">
+      <div class="item">
+        <div class="item-title">Water <span class="price">£1.80</span></div>
+      </div>
+      <div class="item">
+        <div class="item-title">Sparkling Water <span class="price">£2.00</span></div>
+      </div>
+      <div class="item">
+        <div class="item-title">Iced Tea <span class="price">£2.50</span></div>
+      </div>
+      <div class="item">
+        <div class="item-title">Fanta <span class="price">£2.50</span></div>
+      </div>
+      <div class="item">
+        <div class="item-title">Coca-Cola <span class="price">£2.50</span></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      www.mathisvelghe.me
+    </div>
+  </div>
 </body>
 </html>
