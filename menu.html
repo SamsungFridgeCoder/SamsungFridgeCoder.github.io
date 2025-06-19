@@ -14,83 +14,79 @@
       margin: 0;
       padding: 0;
       background-color: #fff8f0;
-      line-height: 15.8px;
       text-align: center;
+      line-height: 1.6;
     }
 
     .container {
-      width: 90%;
       max-width: 800px;
       margin: 0 auto;
-      padding: 2vw;
+      padding: 20px;
       background-color: #fff;
       border: 1px solid #ccc;
     }
 
     h1 {
-      font-size: 4vw;
+      font-size: 48px;
       color: #803C2F;
-      margin-bottom: 0;
+      margin-bottom: 5px;
     }
 
     h2 {
-      font-size: 1.5vw;
+      font-size: 24px;
       color: #803C2F;
       margin-top: 0;
+      margin-bottom: 10px;
     }
 
     .flag {
       width: 100px;
       height: 10px;
       background: linear-gradient(to right, green 33%, white 33%, white 66%, red 66%);
-      margin: 1vw auto;
+      margin: 10px auto 30px;
     }
 
     h3 {
-      font-size: 2vw;
+      font-size: 28px;
       color: #803C2F;
-      margin-top: 2vw;
+      margin-top: 40px;
       text-transform: uppercase;
-    }
-
-    .section {
-      margin-bottom: 2vw;
     }
 
     .item {
-      margin: 2vw 0;
+      margin: 20px 0;
     }
 
     .item-title {
+      font-size: 20px;
       font-weight: bold;
       text-transform: uppercase;
-      font-size: 1.5vw;
-      margin-bottom: 0.3vw;
+      margin-bottom: 5px;
     }
 
     .price {
-      font-size: 1.2vw;
-      font-weight: normal;
+      display: inline-block;
       margin-left: 10px;
+      font-size: 18px;
+      color: #000;
+      font-weight: normal;
     }
 
     .description {
-      font-size: 1.1vw;
-      margin-top: 0.3vw;
+      font-size: 16px;
+      margin-top: 5px;
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     @media (max-width: 600px) {
-      h1 {
-        font-size: 8vw;
-      }
-
-      h2, h3, .item-title, .description, .price {
-        font-size: 4vw;
-      }
-
-      .description {
-        font-size: 3.5vw;
-      }
+      h1 { font-size: 36px; }
+      h2 { font-size: 20px; }
+      h3 { font-size: 24px; }
+      .item-title { font-size: 18px; }
+      .price { font-size: 16px; }
+      .description { font-size: 15px; }
     }
   </style>
 </head>
@@ -101,70 +97,62 @@
     <div class="flag"></div>
 
     <h3>Mains</h3>
-    <div class="section">
-      <div class="item">
-        <div class="item-title">Spaghetti Bolognese <span class="price">£8.00</span></div>
-        <div class="description">Spaghetti with rich minced beef, tomatoes, and herbs</div>
-      </div>
-      <div class="item">
-        <div class="item-title">Spaghetti Carbonara <span class="price">£7.50</span></div>
-        <div class="description">Creamy pasta with bacon, Parmesan, garlic, and egg</div>
-      </div>
-      <div class="item">
-        <div class="item-title">Fettuccine Alfredo <span class="price">£8.50</span></div>
-        <div class="description">Garlic shrimp & crushed red pepper with penne in spicy rosa sauce</div>
-      </div>
-      <div class="item">
-        <div class="item-title">Classic Lasagna <span class="price">£9.00</span></div>
-        <div class="description">Spicy Italian sausage & meat sauce tossed & topped with mozzarella, Parmesan & ricotta</div>
-      </div>
-      <div class="item">
-        <div class="item-title">Pesto Pasta <span class="price">£7.80</span></div>
-        <div class="description">Spicy Italian sausage & meat sauce tossed & topped with mozzarella, Parmesan & ricotta</div>
-      </div>
+    <div class="item">
+      <div class="item-title">Spaghetti Bolognese <span class="price">£8.00</span></div>
+      <div class="description">Spaghetti with rich minced beef, tomatoes, and herbs</div>
+    </div>
+    <div class="item">
+      <div class="item-title">Spaghetti Carbonara <span class="price">£7.50</span></div>
+      <div class="description">Creamy pasta with bacon, Parmesan, garlic, and egg</div>
+    </div>
+    <div class="item">
+      <div class="item-title">Fettuccine Alfredo <span class="price">£8.50</span></div>
+      <div class="description">Garlic shrimp & crushed red pepper with penne in spicy rosa sauce</div>
+    </div>
+    <div class="item">
+      <div class="item-title">Classic Lasagna <span class="price">£9.00</span></div>
+      <div class="description">Spicy Italian sausage & meat sauce tossed & topped with mozzarella, Parmesan & ricotta</div>
+    </div>
+    <div class="item">
+      <div class="item-title">Pesto Pasta <span class="price">£7.80</span></div>
+      <div class="description">Spicy Italian sausage & meat sauce tossed & topped with mozzarella, Parmesan & ricotta</div>
     </div>
 
     <h3>Sides</h3>
-    <div class="section">
-      <div class="item">
-        <div class="item-title">Parmesan Fries <span class="price">£2.50</span></div>
-        <div class="description">Fries topped with grated Parmesan cheese</div>
-      </div>
-      <div class="item">
-        <div class="item-title">Caprese Salad <span class="price">£3.00</span></div>
-        <div class="description">Tomato, mozzarella, basil, and olive oil</div>
-      </div>
+    <div class="item">
+      <div class="item-title">Parmesan Fries <span class="price">£2.50</span></div>
+      <div class="description">Fries topped with grated Parmesan cheese</div>
+    </div>
+    <div class="item">
+      <div class="item-title">Caprese Salad <span class="price">£3.00</span></div>
+      <div class="description">Tomato, mozzarella, basil, and olive oil</div>
     </div>
 
     <h3>Appetizers</h3>
-    <div class="section">
-      <div class="item">
-        <div class="item-title">Garlic Bread <span class="price">£3.00</span></div>
-        <div class="description">Fresh garlic bread with parsley</div>
-      </div>
-      <div class="item">
-        <div class="item-title">Bruschetta <span class="price">£3.50</span></div>
-        <div class="description">Toasted bread with tomato and basil topping</div>
-      </div>
+    <div class="item">
+      <div class="item-title">Garlic Bread <span class="price">£3.00</span></div>
+      <div class="description">Fresh garlic bread with parsley</div>
+    </div>
+    <div class="item">
+      <div class="item-title">Bruschetta <span class="price">£3.50</span></div>
+      <div class="description">Toasted bread with tomato and basil topping</div>
     </div>
 
     <h3>Drinks</h3>
-    <div class="section">
-      <div class="item">
-        <div class="item-title">Water <span class="price">£1.80</span></div>
-      </div>
-      <div class="item">
-        <div class="item-title">Sparkling Water <span class="price">£2.00</span></div>
-      </div>
-      <div class="item">
-        <div class="item-title">Iced Tea <span class="price">£2.50</span></div>
-      </div>
-      <div class="item">
-        <div class="item-title">Fanta <span class="price">£2.50</span></div>
-      </div>
-      <div class="item">
-        <div class="item-title">Coca-Cola <span class="price">£2.50</span></div>
-      </div>
+    <div class="item">
+      <div class="item-title">Water <span class="price">£1.80</span></div>
+    </div>
+    <div class="item">
+      <div class="item-title">Sparkling Water <span class="price">£2.00</span></div>
+    </div>
+    <div class="item">
+      <div class="item-title">Iced Tea <span class="price">£2.50</span></div>
+    </div>
+    <div class="item">
+      <div class="item-title">Fanta <span class="price">£2.50</span></div>
+    </div>
+    <div class="item">
+      <div class="item-title">Coca-Cola <span class="price">£2.50</span></div>
     </div>
   </div>
 </body>
