@@ -3,13 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>Italian Food Truck Menu</title>
+
+  <!-- Import Flama via @font-face if you have the file, or replace this with a similar free font if not available -->
   <style>
+    @font-face {
+      font-family: 'Flama';
+      src: url('Flama-Regular.woff2') format('woff2'),
+           url('Flama-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     * {
       box-sizing: border-box;
     }
 
     body {
-      font-family: 'Georgia', serif;
+      font-family: 'Flama', sans-serif;
       margin: 0;
       padding: 0;
       background-color: #fff8f0;
@@ -70,12 +80,6 @@
 
     .description {
       font-size: 1.1vw;
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 3vw;
-      font-size: 1vw;
     }
 
     @media (max-width: 600px) {
@@ -164,10 +168,6 @@
       <div class="item">
         <div class="item-title">Coca-Cola <span class="price">£2.50</span></div>
       </div>
-    </div>
-
-    <div class="footer">
-      www.mathisvelghe.me
     </div>
   </div>
 </body>
